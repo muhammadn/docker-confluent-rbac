@@ -175,7 +175,8 @@ services:
 
       KAFKA_AUTHORIZER_CLASS_NAME: 'io.confluent.kafka.security.authorizer.ConfluentServerAuthorizer'
       KAFKA_CONFLUENT_AUTHORIZER_ACCESS_RULE_PROVIDERS: 'CONFLUENT'
-      KAFKA_SUPER_USERS: 'User:zaihan;User:control;User:kafka1;User:kafka2;User:kafka3;User:kafka4;User:kafka5;User:kafka6'
+      KAFKA_SUPER_USERS: 'User:zaihan'
+      KAFKA_BROKER_USERS: 'User:kafka1;User:kafka2;User:kafka3;User:kafka4;User:kafka5;User:kafka6;User:control'
       KAFKA_SSL_TRUSTSTORE_LOCATION: '/etc/kafka/secrets/kafka.truststore.jks'
       KAFKA_SSL_TRUSTSTORE_PASSWORD: 'password'
       KAFKA_SSL_KEYSTORE_LOCATION: '/etc/kafka/secrets/kafka4.keystore.jks'
@@ -276,7 +277,8 @@ services:
 
       KAFKA_AUTHORIZER_CLASS_NAME: 'io.confluent.kafka.security.authorizer.ConfluentServerAuthorizer'
       KAFKA_CONFLUENT_AUTHORIZER_ACCESS_RULE_PROVIDERS: 'CONFLUENT'
-      KAFKA_SUPER_USERS: 'User:zaihan;User:control;User:kafka1;User:kafka2;User:kafka3;User:kafka4;User:kafka5;User:kafka6'
+      KAFKA_SUPER_USERS: 'User:zaihan'
+      KAFKA_BROKER_USERS: 'User:kafka1;User:kafka2;User:kafka3;User:kafka4;User:kafka5;User:kafka6;User:control'
       KAFKA_SSL_TRUSTSTORE_LOCATION: '/etc/kafka/secrets/kafka.truststore.jks'
       KAFKA_SSL_TRUSTSTORE_PASSWORD: 'password'
       KAFKA_SSL_KEYSTORE_LOCATION: '/etc/kafka/secrets/kafka5.keystore.jks'
@@ -284,7 +286,7 @@ services:
       KAFKA_SSL_KEY_PASSWORD: 'password'
 
       KAFKA_SECURITY_PROTOCOL: 'SSL'
-        #KAFKA_SSL_ENDPOINT_IDENTIFICATION_ALGORITHM: ' '
+      KAFKA_SSL_ENDPOINT_IDENTIFICATION_ALGORITHM: 'HTTPS'
       KAFKA_SSL_CLIENT_AUTH: 'required'
 
       #############################  MDS Listener - which port to listen on #############################
@@ -377,7 +379,8 @@ services:
 
       KAFKA_AUTHORIZER_CLASS_NAME: 'io.confluent.kafka.security.authorizer.ConfluentServerAuthorizer'
       KAFKA_CONFLUENT_AUTHORIZER_ACCESS_RULE_PROVIDERS: 'CONFLUENT'
-      KAFKA_SUPER_USERS: 'User:zaihan;User:control;User:kafka1;User:kafka2;User:kafka3;User:kafka4;User:kafka5;User:kafka6'
+      KAFKA_SUPER_USERS: 'User:zaihan'
+      KAFKA_BROKER_USERS: 'User:kafka1;User:kafka2;User:kafka3;User:kafka4;User:kafka5;User:kafka6;User:control'
       KAFKA_SSL_TRUSTSTORE_LOCATION: '/etc/kafka/secrets/kafka.truststore.jks'
       KAFKA_SSL_TRUSTSTORE_PASSWORD: 'password'
       KAFKA_SSL_KEYSTORE_LOCATION: '/etc/kafka/secrets/kafka6.keystore.jks'
